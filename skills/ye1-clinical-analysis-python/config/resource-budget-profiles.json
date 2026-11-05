@@ -1,0 +1,62 @@
+{
+  "schema_version": "clinical-resource-profiles@1.0",
+  "absolute": {
+    "max_rows": 100000,
+    "max_input_bytes": 268435456,
+    "max_design_columns": 1024,
+    "max_work_units": 10000000000,
+    "max_candidate_pairs": 100000000,
+    "max_background_rows": 100000,
+    "max_history_rows": 100000
+  },
+  "defaults": {
+    "max_bytes": 16777216,
+    "max_decoded_bytes": 67108864,
+    "max_design_columns": 128,
+    "max_work_units": 250000000,
+    "max_candidate_pairs": 4000000,
+    "max_background_rows": 10000
+  },
+  "profiles": {
+    "tabular": {
+      "default_rows": 10000,
+      "ceiling_rows": 100000
+    },
+    "pair_matching": {
+      "default_rows": 2000,
+      "ceiling_rows": 20000
+    },
+    "formal_ph": {
+      "default_rows": 1000,
+      "ceiling_rows": 5000
+    },
+    "survival_prediction": {
+      "default_rows": 5000,
+      "ceiling_rows": 20000
+    },
+    "survival_evaluation": {
+      "default_rows": 5000,
+      "ceiling_rows": 20000
+    },
+    "latent_longitudinal": {
+      "default_rows": 2000,
+      "ceiling_rows": 20000
+    },
+    "linear_explanation": {
+      "default_rows": 5000,
+      "ceiling_rows": 20000
+    },
+    "tree_explanation": {
+      "default_rows": 1000,
+      "ceiling_rows": 5000,
+      "default_background_rows": 200,
+      "ceiling_background_rows": 2000
+    },
+    "tree_training": {
+      "default_rows": 10000,
+      "ceiling_rows": 100000,
+      "default_background_rows": 200,
+      "ceiling_background_rows": 2000
+    }
+  }
+}
